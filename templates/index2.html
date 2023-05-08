@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Generador de reporte</title>
+</head>
+
+<body style="background-color: #fcfafa;">
+  <div class="container-fluid" style="background-color: black; color: white">
+    <header class="d-flex justify-content-left py-3">
+        <span class="mb-0 h1">IBM Cloud: VMware Shared Reporte por Virtual Machine</span>
+    </header>
+  </div>
+
+<!-- Esto lo voy a usar para el input  -->
+<div class="container my-5 " style="background-color: #fafbfc; color: #0f62fe">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Ingreso de datos del portal de IBM Cloud</h1>
+            <p class="lead" style="color: black">
+                Para verificar que los cálculos realizados por máquina virtual sean los correctos 
+                es necesario poder compararlos con los datos que arroja la sección de consumo y facturación del portal.
+            </p>
+            <p class="lead" style="color: red">
+                Verficar si alguno de estos valores se han modificado:
+            </p>
+            <form action="/submit" method="POST" enctype = "multipart/form-data">
+              <table>
+                <tr>
+                  <input type = "file" name = "file" />
+                </tr>
+                
+                <tr>
+                  <td align="right">Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_RHEL_LARGE_LICENSES:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_LARGE_LICENSES" id="Quantity_TOTAL_RHEL_LARGE_LICENSES" value={{ data.Quantity_TOTAL_RHEL_LARGE_LICENSES }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_RHEL_SMALL_LICENSES:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_SMALL_LICENSES" id="Quantity_TOTAL_RHEL_SMALL_LICENSES" value={{ data.Quantity_TOTAL_RHEL_SMALL_LICENSES }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_EGRESS_GB:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_EGRESS_GB" id="Quantity_TOTAL_EGRESS_GB" value={{ data.Quantity_TOTAL_EGRESS_GB }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_MAX_VCPU:</td>
+                  <td align="left"><input type="text" name="Quantity_MAX_VCPU" id="Quantity_MAX_VCPU" value={{ data.Quantity_MAX_VCPU }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_TOTAL_WINDOWS_LICENSES_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" id="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" value={{ data.Quantity_TOTAL_WINDOWS_LICENSES_HOURS }} /></td>
+                </tr>
+                
+                <tr>
+                   <td align="right">Quantity_MAX_RAM_GB:</td>
+                  <td align="left"><input type="text" name="Quantity_MAX_RAM_GB" id="Quantity_MAX_RAM_GB" value={{ data.Quantity_MAX_RAM_GB }} /></td>
+                </tr>
+                
+                
+                <td align="left"><input type="submit" class="btn btn-outline-success" /></td>
+              </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
