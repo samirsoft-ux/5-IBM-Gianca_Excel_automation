@@ -676,5 +676,5 @@ def submit():
         return 'Not a valid request method for this route'
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 #-----------------------------------------------------------
