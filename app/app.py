@@ -1,3 +1,5 @@
+import os
+
 import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
@@ -675,6 +677,6 @@ def submit():
     else:
         return 'Not a valid request method for this route'
 
-if __name__ == "__main__":
-    app.run(debug=False)
+#if __name__ == "__main__":
+#    app.run(debug=False)
 #-----------------------------------------------------------
