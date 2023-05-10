@@ -8,4 +8,4 @@ pip install opencv-python
 pip install -U pip
 pip install -U matplotlib
 pip install numpy
-pip install openpyxl
+pip install openpyxl==3.0.10
