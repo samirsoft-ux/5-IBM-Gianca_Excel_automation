@@ -532,10 +532,10 @@ def wholeFunction():
   for m in range(2, number_of_rows):
       if('Microsoft Windows ' in sheet2.cell(row=m, column=4).value): #windows
         sheet2.cell(row=m, column=35).value = sheet2.cell(row=m, column=9).value * 0.0193 * 24 * sheet2.cell(row=m, column=5).value
-        Total_Calculos_Licencias_Windows = Total_Calculos_Licencias_Windows + sheet2.cell(row=m, column=33).value
+        Total_Calculos_Licencias_Windows = Total_Calculos_Licencias_Windows + sheet2.cell(row=m, column=35).value
       elif('Red Hat' in sheet2.cell(row=m, column=4).value and sheet2.cell(row=m, column=9).value <= 4): #Red Hat
         sheet2.cell(row=m, column=38).value = sheet2.cell(row=m, column=9).value * 0.0193 * 24 * sheet2.cell(row=m, column=5).value
-        Total_Calculos_Licencias_RHS = Total_Calculos_Licencias_RHS + sheet2.cell(row=m, column=36).value
+        Total_Calculos_Licencias_RHS = Total_Calculos_Licencias_RHS + sheet2.cell(row=m, column=38).value
       elif('Red Hat' in sheet2.cell(row=m, column=4).value and sheet2.cell(row=m, column=9).value > 4): #windows
         sheet2.cell(row=m, column=41).value = sheet2.cell(row=m, column=9).value * 0.0193 * 24 * sheet2.cell(row=m, column=5).value
         Total_Calculos_Licencias_RHL = Total_Calculos_Licencias_RHL + sheet2.cell(row=m, column=41).value
