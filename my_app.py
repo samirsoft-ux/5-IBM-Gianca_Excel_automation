@@ -623,6 +623,7 @@ def wholeFunction():
   SUM_Constantes = 0
   for m in range((New_Row+1), (New_Row+11)):
       SUM_Constantes = float(SUM_Constantes) + float(sheet2.cell(m,4).value)
+      float(sheet2.cell(m,4).value)
       sheet2.cell(m,4).number_format = '#,##0.00$'
   sheet2.cell(row=New_Row+11, column=4).value = SUM_Constantes
   sheet2.cell(row=New_Row+11, column=4).font = Font(color='000000', bold=True)
@@ -631,8 +632,6 @@ def wholeFunction():
   #Borrar datos que causan ruido
   sheet2.cell(row=120, column=5).value = None
   sheet2.cell(row=124, column=5).value = None
-  #HE HECHO ESTE CAMBIO Y EL DEL FORMATO DE LOS DATOS FIJOS
-
   #Crear el archivo output
   Actual_Month = MonthArray[Today.month-2]
   Actual_Month = 'Reporte' + Actual_Month + '.xlsx'
