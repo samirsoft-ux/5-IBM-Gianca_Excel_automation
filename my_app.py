@@ -606,12 +606,14 @@ def wholeFunction():
     elif('Red Hat' in sheet2.cell(row=m, column=4).value and sheet2.cell(row=m, column=9).value > 4): #windows
       Total_Precio_Final_Por_Máquina = Total_Precio_Final_Por_Máquina + sheet2.cell(row=m, column=43).value
     sheet2.cell(row=m, column=44).value = Total_Precio_Final_Por_Máquina
+    sheet2.cell(row=m, column=44).number_format = '#,##0.00€'
     Suma_Precio_Final = Suma_Precio_Final + sheet2.cell(row=m, column=44).value
     Total_Precio_Final_Por_Máquina = 0
     
   sheet2.cell(row=number_of_rows, column=44).value = Suma_Precio_Final
   sheet2.cell(row=number_of_rows, column=44).font = Font(color='ffffff', bold=True)
   sheet2.cell(row=number_of_rows, column=44).fill = PatternFill(start_color='7bb585', end_color='7bb585',fill_type = "solid")
+  sheet2.cell(row=number_of_rows, column=44).number_format = '#,##0.00€'
   #N/A
   for m in range(2, number_of_rows):
     for i in range(23, 44):
