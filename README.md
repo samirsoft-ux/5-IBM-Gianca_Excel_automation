@@ -28,7 +28,7 @@ Este repositorio se encuentra conectado con Render(cuenta de google) para el des
 
 
 <p align="center">
-   <img src=https://github.com/samirsoft-ux/Gianca_FFS/blob/main/Images/first.gif>
+   <img src=https://github.com/samirsoft-ux/Gianca_FFS/blob/main/Images/fst.gif>
 </p>
 
    **Notas**
