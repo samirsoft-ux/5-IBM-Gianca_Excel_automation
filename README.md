@@ -5,8 +5,8 @@ Automatización de la generación del reporte para Ferreyros utilizando python y
 Este repositorio se encuentra conectado con Render(cuenta de google) para el despliegue de la aplicación de forma automática.
 
 ## 📑 Índice  
-1. [1° Descargar y subir el snapshot de VMware](#1-Descargar-y-subir-el-snapshot-de-VMware)
-2. [2° Descargar, ordenar e ingresar los datos del Client Details](#2-Descargar-,-ordenar-e-ingresar-los-datos-del-Client-Details)
+1. [Descargar y subir el snapshot de VMware](#1-Descargar-y-subir-el-snapshot-de-VMware)
+2. [Descargar, ordenar e ingresar los datos del Client Details](#2-Descargar-,-ordenar-e-ingresar-los-datos-del-Client-Details)
 <br />
 
 ## 1° Descargar y subir el snapshot de VMware
@@ -28,13 +28,13 @@ Este repositorio se encuentra conectado con Render(cuenta de google) para el des
 
 
 <p align="center">
-   <img src=>
+   <img src=https://github.com/samirsoft-ux/Gianca_FFS/tree/main/Images/first.gif>
 </p>
 
    **Notas**
    * En caso no te aparezca el botón "EXPORT VMS" cambiar la vista en la que se muestran las VM's.
 <p align="center">
-   <img src=https://github.com/samirsoft-ux/COS_VPE/blob/main/GIFs/third.gif>
+   <img src=https://github.com/samirsoft-ux/Gianca_FFS/tree/main/Images/Nota1.png>
 </p>
 
 ## 2° Descargar, ordenar e ingresar los datos del Client Details
