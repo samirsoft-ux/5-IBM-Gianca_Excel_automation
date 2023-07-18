@@ -606,14 +606,14 @@ def wholeFunction():
     elif('Red Hat' in sheet2.cell(row=m, column=4).value and sheet2.cell(row=m, column=9).value > 4): #windows
       Total_Precio_Final_Por_Máquina = Total_Precio_Final_Por_Máquina + sheet2.cell(row=m, column=43).value
     sheet2.cell(row=m, column=44).value = Total_Precio_Final_Por_Máquina
-    sheet2.cell(row=m, column=44).number_format = '#,##0.00€'
+    sheet2.cell(row=m, column=44).number_format = '#,##0.00$'
     Suma_Precio_Final = Suma_Precio_Final + sheet2.cell(row=m, column=44).value
     Total_Precio_Final_Por_Máquina = 0
     
   sheet2.cell(row=number_of_rows, column=44).value = Suma_Precio_Final
   sheet2.cell(row=number_of_rows, column=44).font = Font(color='ffffff', bold=True)
   sheet2.cell(row=number_of_rows, column=44).fill = PatternFill(start_color='7bb585', end_color='7bb585',fill_type = "solid")
-  sheet2.cell(row=number_of_rows, column=44).number_format = '#,##0.00€'
+  sheet2.cell(row=number_of_rows, column=44).number_format = '#,##0.00$'
   #N/A
   for m in range(2, number_of_rows):
     for i in range(23, 44):
@@ -623,10 +623,16 @@ def wholeFunction():
   SUM_Constantes = 0
   for m in range((New_Row+1), (New_Row+11)):
       SUM_Constantes = float(SUM_Constantes) + float(sheet2.cell(m,4).value)
+      sheet2.cell(m,4).number_format = '#,##0.00$'
   sheet2.cell(row=New_Row+11, column=4).value = SUM_Constantes
   sheet2.cell(row=New_Row+11, column=4).font = Font(color='000000', bold=True)
   sheet2.cell(row=New_Row+11, column=3).value = 'TOTAL'
   sheet2.cell(row=New_Row+11, column=3).font = Font(color='FF0000', bold=True)
+  #Borrar datos que causan ruido
+  sheet2.cell(row=120, column=5).value = None
+  sheet2.cell(row=124, column=5).value = None
+  #HE HECHO ESTE CAMBIO Y EL DEL FORMATO DE LOS DATOS FIJOS
+
   #Crear el archivo output
   Actual_Month = MonthArray[Today.month-2]
   Actual_Month = 'Reporte' + Actual_Month + '.xlsx'
