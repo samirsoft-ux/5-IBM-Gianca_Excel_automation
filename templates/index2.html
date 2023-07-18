@@ -27,11 +27,14 @@
                 asegurarte de compararlos con los datos que arroja la sección de consumo y facturación del portal.
             </p>
             <p class="lead" style="color: red">
-                Recuerda que el archivo a subir tiene que tener el siguiente nombre "principal.xlsx".
+                  * Recuerda que el archivo a subir tiene que tener el siguiente nombre "principal.xlsx".
             </p>
             <p class="lead" style="color: red">
-                También verifica que los valores de las siguientes variables vayan acorde al reporte del mes que se requiera.
+                  * También verifica que los valores de las siguientes variables vayan acorde al reporte del mes que se requiera.
             </p>
+            <p class="lead" style="color: rgb(124, 128, 134)">
+                  * En caso sea necesario en el siguiente <a href="https://github.com/samirsoft-ux/Gianca_FFS">repositorio</a> vas a encontrar una guía paso a paso de cómo generar el reporte.
+          </p>
             <form action="/submit" method="POST" enctype = "multipart/form-data">
               <table>
                 <tr>
@@ -39,55 +42,54 @@
                 </tr>
                 
                 <tr>
+                  <td align="right">Quantity_MAX_RAM_GB:</td>
+                  <td align="left"><input type="text" name="Quantity_MAX_RAM_GB" id="Quantity_MAX_RAM_GB" value={{ data.Quantity_MAX_RAM_GB }} /></td>
+                </tr>
+
+                <tr>
+                  <td align="right">Quantity_MAX_VCPU:</td>
+                  <td align="left"><input type="text" name="Quantity_MAX_VCPU" id="Quantity_MAX_VCPU" value={{ data.Quantity_MAX_VCPU }} /></td>
+                </tr>
+
+                <tr>
+                  <td align="right">Quantity_TOTAL_EGRESS_GB:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_EGRESS_GB" id="Quantity_TOTAL_EGRESS_GB" value={{ data.Quantity_TOTAL_EGRESS_GB }} /></td>
+                </tr>
+
+                <tr>
+                  <td align="right">Quantity_TOTAL_RHEL_LARGE_LICENSES:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_LARGE_LICENSES" id="Quantity_TOTAL_RHEL_LARGE_LICENSES" value={{ data.Quantity_TOTAL_RHEL_LARGE_LICENSES }} /></td>
+                </tr>
+               
+                <tr>
+                  <td align="right">Quantity_TOTAL_RHEL_SMALL_LICENSES:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_SMALL_LICENSES" id="Quantity_TOTAL_RHEL_SMALL_LICENSES" value={{ data.Quantity_TOTAL_RHEL_SMALL_LICENSES }} /></td>
+                </tr>
+
+                <tr>
+                  <td align="right">Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS:</td>
+                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS }} /></td>
+                </tr>
+
+                <tr>
                   <td align="right">Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS:</td>
                   <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_POINT_TWO_FIVE_IOPS_GB_HOURS }} /></td>
                 </tr>
                 
                 <tr>
-                   <td align="right">Quantity_TOTAL_RHEL_LARGE_LICENSES:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_LARGE_LICENSES" id="Quantity_TOTAL_RHEL_LARGE_LICENSES" value={{ data.Quantity_TOTAL_RHEL_LARGE_LICENSES }} /></td>
-                </tr>
-                
-                <tr>
-                   <td align="right">Quantity_TOTAL_RHEL_SMALL_LICENSES:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_RHEL_SMALL_LICENSES" id="Quantity_TOTAL_RHEL_SMALL_LICENSES" value={{ data.Quantity_TOTAL_RHEL_SMALL_LICENSES }} /></td>
-                </tr>
-                
-                <tr>
-                   <td align="right">Quantity_TOTAL_EGRESS_GB:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_EGRESS_GB" id="Quantity_TOTAL_EGRESS_GB" value={{ data.Quantity_TOTAL_EGRESS_GB }} /></td>
-                </tr>
-                
-                <tr>
-                   <td align="right">Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS }} /></td>
-                </tr>
-                
-                <tr>
-                   <td align="right">Quantity_MAX_VCPU:</td>
-                  <td align="left"><input type="text" name="Quantity_MAX_VCPU" id="Quantity_MAX_VCPU" value={{ data.Quantity_MAX_VCPU }} /></td>
-                </tr>
-                
-                <tr>
-                   <td align="right">Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS:</td>
+                  <td align="right">Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS:</td>
                   <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_TEN_IOPS_GB_HOURS }} /></td>
                 </tr>
                 
                 <tr>
-                   <td align="right">Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_FOUR_IOPS_GB_HOURS }} /></td>
+                   <td align="right">Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS:</td>
+                   <td align="left"><input type="text" name="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" id="Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS" value={{ data.Quantity_TOTAL_STORAGE_TWO_IOPS_GB_HOURS }} /></td>
                 </tr>
                 
                 <tr>
                    <td align="right">Quantity_TOTAL_WINDOWS_LICENSES_HOURS:</td>
-                  <td align="left"><input type="text" name="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" id="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" value={{ data.Quantity_TOTAL_WINDOWS_LICENSES_HOURS }} /></td>
+                   <td align="left"><input type="text" name="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" id="Quantity_TOTAL_WINDOWS_LICENSES_HOURS" value={{ data.Quantity_TOTAL_WINDOWS_LICENSES_HOURS }} /></td>
                 </tr>
-                
-                <tr>
-                   <td align="right">Quantity_MAX_RAM_GB:</td>
-                  <td align="left"><input type="text" name="Quantity_MAX_RAM_GB" id="Quantity_MAX_RAM_GB" value={{ data.Quantity_MAX_RAM_GB }} /></td>
-                </tr>
-                
                 
                 <td align="left"><input type="submit" class="btn btn-outline-success" /></td>
               </table>
