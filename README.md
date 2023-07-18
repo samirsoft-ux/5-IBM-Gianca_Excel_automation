@@ -28,13 +28,13 @@ Este repositorio se encuentra conectado con Render(cuenta de google) para el des
 
 
 <p align="center">
-   <img src=https://github.com/samirsoft-ux/Gianca_FFS/tree/main/Images/first.gif>
+   <img src=https://github.com/samirsoft-ux/Gianca_FFS/blob/main/Images/first.gif>
 </p>
 
    **Notas**
    * En caso no te aparezca el botón "EXPORT VMS" cambiar la vista en la que se muestran las VM's.
 <p align="center">
-   <img src=https://github.com/samirsoft-ux/Gianca_FFS/tree/main/Images/Nota1.png>
+   <img src=https://github.com/samirsoft-ux/Gianca_FFS/blob/main/Images/Nota1.png>
 </p>
 
 ## 2° Descargar, ordenar e ingresar los datos del Client Details
