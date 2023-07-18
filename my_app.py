@@ -629,6 +629,7 @@ def wholeFunction():
   sheet2.cell(row=New_Row+11, column=4).font = Font(color='000000', bold=True)
   sheet2.cell(row=New_Row+11, column=3).value = 'TOTAL'
   sheet2.cell(row=New_Row+11, column=3).font = Font(color='FF0000', bold=True)
+  sheet2.cell(row=New_Row+11, column=4).number_format = '#,##0.00$'
   #Borrar datos que causan ruido
   sheet2.cell(row=120, column=5).value = None
   sheet2.cell(row=124, column=5).value = None
