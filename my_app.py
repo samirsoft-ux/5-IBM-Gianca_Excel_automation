@@ -638,9 +638,13 @@ def wholeFunction():
   Actual_Month = 'Reporte' + Actual_Month + '.xlsx'
   # PEQUEÑOS CAMBIOS
   #global path
-  wb.save(Actual_Month)
+  
   global nombre
   nombre = Actual_Month
+  #Quitar la primera hoja
+  std = wb.get_sheet_names()
+  wb.remove(wb[std[0]])
+  wb.save(Actual_Month)
   #global stream
   #stream = save_virtual_workbook(Actual_Month)
   #-------------SELECCION Y CONSTRUCCIÓN DE SOLO LOS DATOS RELEVANTES------------------------
